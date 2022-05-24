@@ -1,0 +1,12 @@
+$dark: #000000;
+$link-light: #F2F2F2;
+$success: #6F0505;
+body {
+    background-color: white;
+}
+#account {
+    border-left: #F2F2F2;
+}
+
+
+@import "~bootstrap/scss/bootstrap";
