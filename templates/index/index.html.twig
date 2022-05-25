@@ -2,4 +2,10 @@
 
 {% block title %}Wild Series{% endblock %}
 
-{% block body %}<h1>Bienvenue !</h1>{% endblock %}
+{% block body %}
+
+    <h1>Bienvenue !</h1>
+    <a href="{{ path("program_index")}}">Voir les séries</a>
+    <a href="{{ path("category_index")}}">Voir les catégories</a>
+
+{% endblock %}

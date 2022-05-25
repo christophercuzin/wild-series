@@ -45,6 +45,111 @@ class ProgramFixtures extends Fixture implements DependentFixtureInterface
             'poster' => '',
             'category' => 'category_comedie'
         ],
+        [
+            'title' => 'the witcher',
+            'synopsis' => 'C\'est l\'histoire de Geralt de riv sorceleur de son etat qui chasse des monstres',
+            'poster' => 'assets/images/the-witcher.jpg',
+            'category' => 'category_fantastique'
+        ],
+
+        [
+            'title' => 'the walking dead ',
+            'synopsis' => 'C\'est l\'histoire de gens qui ce font attaqué par des zombies',
+            'poster' => '',
+            'category' => 'category_horreur'
+        ],
+
+        [
+            'title' => 'l\'attaque des titans',
+            'synopsis' => 'C\'est l\'histoire de gens qui ce font ataqué par des titans',
+            'poster' => '',
+            'category' => 'category_anime'
+        ],
+
+        [
+            'title' => 'jessica jones',
+            'synopsis' => 'jessica jones detective privé a la force surhumaine combat le crime',
+            'poster' => '',
+            'category' => 'category_action'
+        ],
+
+        [
+            'title' => 'brooklyn nine-nine',
+            'synopsis' => 'Cette comédie chorale suit les personnages et les affaires d\'un commissariat de 
+            Brooklyn, loin des dangers et des affaires plus spectaculaires du très chic Manhattan.',
+            'poster' => '',
+            'category' => 'category_comedie'
+        ],
+        [
+            'title' => 'the witcher',
+            'synopsis' => 'C\'est l\'histoire de Geralt de riv sorceleur de son etat qui chasse des monstres',
+            'poster' => 'assets/images/the-witcher.jpg',
+            'category' => 'category_fantastique'
+        ],
+
+        [
+            'title' => 'the walking dead ',
+            'synopsis' => 'C\'est l\'histoire de gens qui ce font attaqué par des zombies',
+            'poster' => '',
+            'category' => 'category_horreur'
+        ],
+
+        [
+            'title' => 'l\'attaque des titans',
+            'synopsis' => 'C\'est l\'histoire de gens qui ce font ataqué par des titans',
+            'poster' => '',
+            'category' => 'category_anime'
+        ],
+
+        [
+            'title' => 'jessica jones',
+            'synopsis' => 'jessica jones detective privé a la force surhumaine combat le crime',
+            'poster' => '',
+            'category' => 'category_action'
+        ],
+
+        [
+            'title' => 'brooklyn nine-nine',
+            'synopsis' => 'Cette comédie chorale suit les personnages et les affaires d\'un commissariat de 
+            Brooklyn, loin des dangers et des affaires plus spectaculaires du très chic Manhattan.',
+            'poster' => '',
+            'category' => 'category_comedie'
+        ],
+        [
+            'title' => 'the witcher',
+            'synopsis' => 'C\'est l\'histoire de Geralt de riv sorceleur de son etat qui chasse des monstres',
+            'poster' => 'assets/images/the-witcher.jpg',
+            'category' => 'category_fantastique'
+        ],
+
+        [
+            'title' => 'the walking dead ',
+            'synopsis' => 'C\'est l\'histoire de gens qui ce font attaqué par des zombies',
+            'poster' => '',
+            'category' => 'category_horreur'
+        ],
+
+        [
+            'title' => 'l\'attaque des titans',
+            'synopsis' => 'C\'est l\'histoire de gens qui ce font ataqué par des titans',
+            'poster' => '',
+            'category' => 'category_anime'
+        ],
+
+        [
+            'title' => 'jessica jones',
+            'synopsis' => 'jessica jones detective privé a la force surhumaine combat le crime',
+            'poster' => '',
+            'category' => 'category_action'
+        ],
+
+        [
+            'title' => 'brooklyn nine-nine',
+            'synopsis' => 'Cette comédie chorale suit les personnages et les affaires d\'un commissariat de 
+            Brooklyn, loin des dangers et des affaires plus spectaculaires du très chic Manhattan.',
+            'poster' => '',
+            'category' => 'category_comedie'
+        ],
     ];
     public function load(ObjectManager $manager): void
     {

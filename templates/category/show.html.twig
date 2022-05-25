@@ -1,0 +1,21 @@
+{% extends 'base.html.twig' %}
+
+{% block title %} #{{ category.name }}{% endblock %}
+
+{% block body %}
+<h1>Catégorie : {{ category.name }}</h1>
+    {% for program in programs %}
+        <div class="media">
+            <h2 class="mt-0"><a href="{{ path("program_show", { id: program.id }) }}">{{ program.id }} : {{ program.title }}</a></h2>
+            <img class="align-self-start mr-3" src="{{program.poster}}" alt="{{ program.title }} poster">
+            <p>{{ program.synopsis }}</p>
+            <div class="media-body">
+            </div>
+        </div>
+    {% else %}
+        Aucune série trouvée. <br>
+    {% endfor %}
+    <a href="{{ path('category_index') }}">
+        Retour à la liste des catégorie
+    </a>
+{% endblock %}
