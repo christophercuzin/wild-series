@@ -13,7 +13,7 @@ class CategoryFixtures extends Fixture
         'aventure',
         'anime',
         'fantastique',
-        'Horreur',
+        'horreur',
         'comedie'
 
     ];
@@ -25,6 +25,8 @@ class CategoryFixtures extends Fixture
         $category->setName($categoryName);
 
         $manager->persist($category);
+
+        $this->addReference('category_' . $categoryName, $category);
         }
 
         $manager->flush();
