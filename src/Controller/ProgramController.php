@@ -12,10 +12,41 @@ use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 use App\Repository\ProgramRepository;
 use App\Repository\SeasonRepository;
+use Symfony\Component\HttpFoundation\Request;
+use App\Form\ProgramType;
 
 #[Route('/program', name: 'program_')]
 Class ProgramController extends AbstractController
 {
+    #[Route('/new', name: 'new')]
+    public function new(Request $request, ProgramRepository $programRepository): Response
+    {
+        $program = new Program();
+
+        // Create the form, linked with $category
+        $form = $this->createForm(ProgramType::class, $program);
+        $form->handleRequest($request);
+
+    // Was the form submitted ?
+
+    if ($form->isSubmitted()) {
+
+        $programRepository->add($program, true);
+        return $this->redirectToRoute('program_index');
+
+    }
+        
+        // Render the form (best practice)
+        return $this->renderForm('program/new.html.twig', [
+            'form' => $form,
+        ]);
+
+        
+        // Alternative
+        // return $this->render('category/new.html.twig', [
+        //   'form' => $form->createView(),
+        // ]);
+    }
 
     #[Route('/', name: 'index')]
     public function index(ProgramRepository $programRepository): Response
